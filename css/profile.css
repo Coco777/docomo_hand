@@ -1,0 +1,15 @@
+
+
+.tag-box{
+	background: #ffd700;	
+	border-radius: 9px;
+	padding: 0.1em 1em;
+	margin: 0em 1em;
+	color: #fff;
+}
+
+.flex{
+	font-weight: bold;
+	word-wrap: break-word;
+	margin: 1em 1em;
+}
