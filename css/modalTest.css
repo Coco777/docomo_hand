@@ -6,7 +6,7 @@ body {
 	padding: 0 ;
 }
   
-#circle-tag{
+.circle-tag{
 	background-color: #cccccc;;
 	font-weight: bolder;
 	color: #000;

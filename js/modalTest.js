@@ -23,7 +23,7 @@ $("#modal-open").click( function(){
 
 var count = 0;
 
-$("#circle-tag").click( function(){
+$(".circle-tag").on('click', function(){
 	//コンテンツをセンタリングする
 	centeringModalSyncer() ;
 
