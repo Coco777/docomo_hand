@@ -7,27 +7,45 @@ $("#modal-open").click( function(){
 	centeringModalSyncer() ;
 
 	//コンテンツをフェードインする
-	$( "#modal-content" ).modal('show');
+	$( "#modal-profile" ).fadeIn("slow");
 
-	//[#modal-close]をクリックしたら…
-	$( "#modal-close" ).unbind().click( function(){
+
+	$( "#modal-profile-close" ).unbind().click( function(){
 
 		//[#modal-content]と[#modal-overlay]をフェードアウトした後に…
-		  	console.log("modal closed.");
-  			$('body').removeClass('modal-open'); // 1
-  			$('.modal-backdrop').remove();       // 2
-  			$('#modal-content').modal('hide'); 
+  		$('body').removeClass('modal-open'); // 1
+  		$('.modal-backdrop').remove();       // 2
+  		$('#modal-profile').fadeOut('slow'); 
 	} ) ;
 
+	//[#modal-close]をクリックしたら…
+	$("#btn-request").click( function(){
+		//コンテンツをセンタリングする
+		centeringModalSyncer() ;
+
+		//コンテンツをフェードインする
+		$( "#modal-wait-approval" ).fadeIn('slow');
+
+		//[#modal-close]をクリックしたら…
+		$( "#modal-close" ).unbind().click( function(){
+
+			//[#modal-content]と[#modal-overlay]をフェードアウトした後に…
+	  		$('body').removeClass('modal-open'); // 1
+	  		$('.modal-backdrop').remove();       // 2
+	  		$('#modal-wait-approval').fadeOut('slow'); 
+		} ) ;
+	} ) ;
 } ) ;
 
-var count = 0;
+
+var count = 1;
 
 $(".circle-tag").on('click', function(){
 	//コンテンツをセンタリングする
 	centeringModalSyncer() ;
 
 	if (count == 0){
+		console.log(this);
 		$(this).css({backgroundColor: "#cccccc",
        				color: "#000"})
         count=1;        
@@ -55,11 +73,11 @@ $( window ).resize( centeringModalSyncer ) ;
 		// jQueryのバージョンによっては、引数[{margin:true}]を指定した時、不具合を起こします。
 //		var cw = $( "#modal-content" ).outerWidth( {margin:true} );
 //		var ch = $( "#modal-content" ).outerHeight( {margin:true} );
-		var cw = $( "#modal-content" ).outerWidth();
-		var ch = $( "#modal-content" ).outerHeight();
+		var cw = $( "#modal-profile" ).outerWidth();
+		var ch = $( "#modal-profile" ).outerHeight();
 
 		//センタリングを実行する
-		$( "#modal-content" ).css( {"left": ((w - cw)/2) + "px","top": ((h - ch)/2) + "px"} ) ;
+		$( "#modal-profile" ).css( {"left": ((w - cw)/2) + "px","top": ((h - ch)/2) + "px"} ) ;
 
 	}
 

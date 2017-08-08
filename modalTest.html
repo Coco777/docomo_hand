@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <link rel="stylesheet" type="text/css" href="modalTest.css">
+  <link rel="stylesheet" type="text/css" href="./css/modalTest.css">
+  
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bootstrapの使い方</title>
+  
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link href="modalTest.css" rel="stylesheet">
+  <link href="css/freelancer.css" rel="stylesheet">
+  <link href="./css/modalTest.css" rel="stylesheet">
+  <link href="css/profile.css" rel="stylesheet">
   <!--[if lt IE 9]>
     <script src="js/html5shiv.min.js"></script>
     <script src="js/respond.min.js"></script>
@@ -20,30 +25,78 @@
 
 
 <h1 style="text-align:center;color:#d36015;">モーダルウィンドウのデモ</h1>
-<p>リンクテキストをクリックするとモーダルウィンドウを表示させます。モーダルウィンドウ周りのオーバーレイをクリックすると終了します。</p>
+<p>リンクテキストをクリックするとモーダルウィンドウを表示させます。</p>
 
 <HR style="margin: 3em 0 ;">
 
 <!-- ここからモーダルウィンドウ -->
-<div id="modal-content" class="modal fade">
+<div id="modal-profile" tabindex="-1">
   <div class="modal-dialog modal-content">
+    <div class="modal-header">
+      <button id = "modal-profile-close" type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <img class="img-responsive icon-style" src="img/poinco.jpg" alt="">
+        <div class="intro-text">
+          <h1 class="name center">鈴木 太郎</h1>
+          <h1 class="name center">情報科学科3年</h1>
 
+          <div class=center>
+            <div class="flex property-style">
+              <div >サークル:</div>
+              <div class="tag-box">フットサル</div>
+            </div>
+
+            <div class="flex property-style">
+              <div>バイト:</div>
+              <div class="tag-box">カフェ</div>
+            </div>
+
+            <div class="flex property-style">
+              <div>趣味:</div>
+              <div class="tag-box">筋トレ</div>
+            </div>
+
+            <div class="flex property-style">
+              <div>好きな教授:</div>
+              <div class="tag-box">M野H史</div>
+            </div>
+
+            <div class="flex property-style">
+              <div>嫌いな教授:</div>
+              <div class="tag-box">F田N樹</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button id="btn-request" class="btn btn-default center-block" data-dismiss="modal">
+        リクエストを送る
+      </button>
+    </div>
+  </div>
+</div>
+
+<div id="modal-wait-approval" >
+  <div class="modal-dialog modal-content">
     <div class="modal-body">
       承認待ち... 
     </div>
     <div class="modal-footer">
-      <button class="btn btn-default center-block" data-dismiss="modal">
+      <button id="modal-close" class="btn btn-default center-block" data-dismiss="modal">
         キャンセル
       </button>
-      </div>
+    </div>
   </div>
 </div>
 
 <p><a id="modal-open" class="button-link">クリックするとモーダルウィンドウを開きます。</a></p>
 <!-- ここまでモーダルウィンドウ -->
 
-<button id=circle-tag class="btn btn-default center-block" data-dismiss="modal">
-        サッカー
+<button class="btn btn-default center-block circle-tag" data-dismiss="modal">
+       tag demo
 </button>
 
 <HR style="margin: 3em 0 ;">
@@ -52,7 +105,7 @@
 <!-- JavaScriptの読み込み -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="modalTest.js"></script>
+<script src="./js/modalTest.js"></script>
 
 </body>
 
