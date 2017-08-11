@@ -1,9 +1,14 @@
 {
   "name": "docomo_hand",
   "version": "1.0.0",
-  "description": "DOCOMO Hackathon 2017",
-  "main": "index.js",
+  "description": "NTT DOCOMO Hackathon 2017",
   "repository": "git@github.com:koki-sato/docomo_hand-template.git",
   "author": "Koki Sato",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+  },
+  "dependencies": {
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1"
+  }
 }
