@@ -61,7 +61,3 @@ typings/
 
 # dotenv environment variables file
 .env
-
-# Outout files
-public/bundle.js
-public/bundle.css

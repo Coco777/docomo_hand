@@ -7,17 +7,19 @@
   "license": "MIT",
   "scripts": {
     "build": "run-s build:css build:js",
-    "build:css": "node-sass src/styles/app.scss public/bundle.css",
+    "build:css": "node-sass src/styles/app.scss public/app.css",
     "build:js": "webpack --display-error-details",
     "watch": "run-p watch:css watch:js",
     "watch:css": "node-sass -w src/styles/app.scss -o public",
     "watch:js": "webpack --watch"
   },
   "dependencies": {
+    "font-awesome": "^4.7.0",
     "material-ui": "^0.18.7",
     "npm-run-all": "^4.0.1",
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "react-fontawesome": "^1.6.1"
   },
   "devDependencies": {
     "babel-core": "^6.24.0",
