@@ -1,15 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
-import HandNavbar from './components/HandNavbar';
+import Mypage from './components/Mypage';
+import Result from './components/Result';
 
-const App = () => (
-  <MuiThemeProvider>
-    <HandNavbar />
-  </MuiThemeProvider>
-);
-
-ReactDOM.render(
-  <App />,
-  document.getElementById('app')
-);
+if (document.getElementById("app-mypage") != null) {
+  ReactDOM.render(
+    <Mypage />,
+    document.getElementById('app-mypage')
+  );
+} else if (document.getElementById("app-result") != null) {
+  ReactDOM.render(
+    <Result />,
+    document.getElementById('app-result')
+  );
+}
