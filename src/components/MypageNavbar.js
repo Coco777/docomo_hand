@@ -9,14 +9,14 @@ const styles = {
     fontWeight: 'bold',
   },
   edit: {
-    fontSize: 16,
+    fontSize: 18,
   },
 };
 
 const MypageNavbar = () => (
   <AppBar
     title={<span style={styles.title}>マイページ</span>}
-    iconElementLeft={<FlatButton icon={<FontAwesome name='chevron-left' size='2x' inverse='true' />} href='result.html' className='nav-icon' />}
+    iconElementLeft={<FlatButton icon={<FontAwesome name='chevron-left' size='2x' inverse='true' />} href='./result.html' className='nav-fa-icon' />}
     iconElementRight={<FlatButton label='編集' labelStyle={styles.edit} href='#' />}
     className='hand-navbar'
   />

@@ -2,11 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Chip from 'material-ui/Chip';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import MypageNavbar from './MypageNavbar';
+import ResultNavbar from './ResultNavbar';
 
 const Result = () => (
   <MuiThemeProvider>
-    <div>This is result</div>
+    <div>
+      <ResultNavbar />
+      <div>This is result</div>
+    </div>
   </MuiThemeProvider>
 );
 

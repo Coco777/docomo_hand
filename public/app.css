@@ -2,8 +2,15 @@
   text-align: center;
   background-color: #ffd700 !important; }
 
-.nav-icon {
+.nav-fa-icon {
   margin-top: 7px !important; }
+
+.nav-img-icon {
+  border-radius: 50%;
+  margin-top: 4px;
+  margin-left: 8px;
+  max-width: 40px;
+  max-height: 40px; }
 
 .profile {
   text-align: center; }
