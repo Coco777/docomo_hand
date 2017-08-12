@@ -1,10 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
+import HandNavbar from './components/HandNavbar';
 
-ReactDOM.render((
-  <div>
-    <div className="app-header">
-      Hello HANd!
-    </div>
-  </div>
-), document.getElementById('app'));
+const App = () => (
+  <MuiThemeProvider>
+    <HandNavbar />
+  </MuiThemeProvider>
+);
+
+ReactDOM.render(
+  <App />,
+  document.getElementById('app')
+);
