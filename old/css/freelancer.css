@@ -80,6 +80,7 @@ header img {
   border-radius: 50%;
   margin: 0 auto 20px;
 }
+
 header .intro-text .name {
   display: block;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -522,4 +523,93 @@ div#maincontent {
     display: -ms-flex;
     display: -o-flex;
     display: flex;
+}
+
+.cover{
+  background-image: "img/doragonrader.jpg";
+  background-size: cover;
+}
+
+.location_far1{
+  position:absolute;
+  top:300px;
+  left:322px;
+
+}
+
+.location_middle1{
+  position:absolute;
+  top:300px;
+  left:248px;
+
+}
+
+.location_immediate1{
+  position:absolute;
+  top:300px;
+  left:203px;
+
+}
+
+.location_far2{
+  position:absolute;
+  top:300px;
+  left:0px;
+
+}
+
+.location_middle2{
+  position:absolute;
+  top:300px;
+  left:48px;
+
+}
+
+.location_immediate2{
+  position:absolute;
+  top:300px;
+  left:103px;
+
+}
+
+.location_far3{
+  position:absolute;
+  top:200px;
+  left:48px;
+
+}
+
+.location_middle3{
+  position:absolute;
+  top:240px;
+  left:220px;
+
+}
+
+.location_immediate3{
+  position:absolute;
+  top:280px;
+  left:140px;
+
+}
+
+.location_far4{
+  position:absolute;
+  top:480px;
+  left:168px;
+
+}
+
+.location_middle4{
+  position:absolute;
+  top:430px;
+  left:148px;
+
+}
+
+.location_immediate4{
+  position:absolute;
+  top:360px;
+  left:180px;
+
 }
