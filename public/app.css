@@ -22,6 +22,9 @@
     margin-right: auto;
     max-width: 225px;
     max-height: 225px; }
+  .profile .profile-modal-icon {
+    max-width: 150px;
+    max-height: 150px; }
 
 body {
   margin: 0px;
