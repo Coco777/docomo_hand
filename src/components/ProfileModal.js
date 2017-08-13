@@ -31,7 +31,7 @@ export default class ProfileModal extends React.Component {
   render() {
     const actions = [
       <FlatButton
-        label="キャンセル"
+        label='キャンセル'
         onTouchTap={this.props.onCansel}
       />,
       <FlatButton

@@ -9,28 +9,34 @@ import CommunicationChatBubble from 'material-ui/svg-icons/communication/chat-bu
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import ResultNavbar from './ResultNavbar';
 import ProfileModal from './ProfileModal'
+import WaitingModal from './WaitingModal'
 
 export default class Result extends React.Component {
   state = {
-    showModal: false,
+    showProfileModal: false,
+    showWaitingModal: false,
     userName: '',
     userIcon: '',
   };
 
   handleTouchTap = (data, event) => {
     this.setState({
-      showModal: true,
+      showProfileModal: true,
       userName: data[0],
       userIcon: data[1],
     });
   };
 
   handleCansel = (event) => {
-    this.setState({ showModal: false });
+    this.setState({ showProfileModal: false });
   };
 
   handleSubmit = (event) => {
-    this.setState({ showModal: false });
+    this.setState({ showWaitingModal: true });
+  };
+
+  handleCanselOnWaiting = (event) => {
+    this.setState({ showWaitingModal: false });
   };
 
   render() {
@@ -92,11 +98,15 @@ export default class Result extends React.Component {
             />
           </List>
           <ProfileModal
-            isOpen={this.state.showModal}
+            isOpen={this.state.showProfileModal}
             onCansel={this.handleCansel}
             onSubmit={this.handleSubmit}
             userName={this.state.userName}
             userIcon={this.state.userIcon}
+          />
+          <WaitingModal
+            isOpen={this.state.showWaitingModal}
+            onCansel={this.handleCanselOnWaiting}
           />
         </div>
       </MuiThemeProvider>
