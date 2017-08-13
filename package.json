@@ -1,0 +1,39 @@
+{
+  "name": "docomo_hand",
+  "version": "1.0.0",
+  "description": "NTT DOCOMO Hackathon 2017",
+  "repository": "git@github.com:koki-sato/docomo_hand-template.git",
+  "author": "Koki Sato",
+  "license": "MIT",
+  "scripts": {
+    "build": "run-s build:css build:js",
+    "build:css": "node-sass src/styles/app.scss public/app.css",
+    "build:js": "webpack --display-error-details",
+    "watch": "run-p watch:css watch:js",
+    "watch:css": "node-sass -w src/styles/app.scss -o public",
+    "watch:js": "webpack --watch"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "material-ui": "^0.18.7",
+    "npm-run-all": "^4.0.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-fontawesome": "^1.6.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "eslint": "^3.18.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3",
+    "node-sass": "^4.5.2",
+    "react-tap-event-plugin": "^2.0.1",
+    "webpack": "^2.3.2"
+  }
+}
