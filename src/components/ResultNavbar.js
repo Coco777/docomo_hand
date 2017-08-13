@@ -7,7 +7,7 @@ const styles = {
   title: {
     cursor: 'pointer',
     fontWeight: 'bold',
-  }
+  },
 };
 
 const ResultNavbar = () => (

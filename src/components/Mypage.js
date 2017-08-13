@@ -14,6 +14,7 @@ const styles = {
   chip: {
     margin: 4,
     backgroundColor: '#ffd700',
+    borderRadius: 8,
   },
   chipLabel: {
     color: '#ffffff',
