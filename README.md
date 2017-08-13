@@ -1,1 +1,3 @@
-# docomo_hand
+# docomo_hand-template
+
+NTT DOCOMO Internship 2017

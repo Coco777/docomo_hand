@@ -1,0 +1,26 @@
+
+
+.tag-box{
+	background: #ffd700;	
+	border-radius: 9px;
+	padding: 0.1em 1em;
+	margin: 0em 1em;
+	color: #fff;
+}
+
+.property-style{
+	font-weight: bold;
+	word-wrap: break-word;
+	margin: 0.5em 1em;
+}
+
+.icon-style{
+	border-radius: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.center{
+	text-align: center;
+}
